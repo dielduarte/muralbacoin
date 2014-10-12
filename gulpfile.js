@@ -11,7 +11,7 @@ uglify    = require('gulp-uglify');
 
 var pathsDev = {
   html: ['./dev/*.html'],
-  styles: ['./dev/assets/scss/*.scss'],
+  styles: ['./dev/assets/scss/*.scss', './dev/assets/scss/partials/*.scss'],
   scripts: ['./dev/assets/js/*.js'],
   image: ['./dev/assets/img/*.*']
 
