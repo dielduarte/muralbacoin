@@ -1,0 +1,19 @@
+{
+  "name": "muralbacoin",
+  "description": "mural de fotos projeto bacoin",
+  "version": "1.0.0",
+  "main": "build/index.html",
+  "private": true,
+  "dependencies": {
+    "gulp": "*",
+    "gulp-rename": "^1.2.0",
+    "gulp-htmlmin": "^0.1.3",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-imagemin": "^0.6.1",
+    "gulp-concat": "^2.3.4",
+    "gulp-sass": "^0.7.2",
+    "gulp-uglify": "^1.0.1"
+  },
+  "author": "DielDuarte",
+  "license":"MIT"
+}
