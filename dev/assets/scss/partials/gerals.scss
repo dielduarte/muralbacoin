@@ -12,7 +12,7 @@ body {
 } 
 
 /**************************************
-		CONTAINER STYLES
+		CLASS CONTAINER STYLES
 ***************************************/
 
 .container {
@@ -21,3 +21,40 @@ body {
 	margin: 0 auto;
 }
 
+
+/**************************************
+		CLASS LOGO
+***************************************/
+
+.logo {
+	width: 250px;
+	margin-top: 1%;
+	padding-right: 30px;
+	border-right: 1px solid #fff;
+
+	@extend %float-left;
+}
+
+
+/************************************
+	CLASS TEXT
+*************************************/
+
+.text {
+	text-align: justify;
+	max-width: 70%;
+	color:#fff;
+	font-family: "neosansbold";
+	font-size: 20px;
+	padding-left: 40px;
+
+	@extend %float-left;
+}
+
+/************************************
+	CLASS TEXT 	YELLOW
+*************************************/
+
+.text-yellow {
+	color: #f1bd09;
+}

@@ -13,7 +13,8 @@ var pathsDev = {
   html: ['./dev/*.html'],
   styles: ['./dev/assets/scss/*.scss', './dev/assets/scss/partials/*.scss'],
   scripts: ['./dev/assets/js/*.js'],
-  image: ['./dev/assets/img/*.*']
+  image: ['./dev/assets/img/*.*'],
+  fonts: ['./dev/assets/fonts/*.*']
 
 };
 
@@ -59,6 +60,14 @@ gulp.task('minifyhtml', function() {
 });
 
 
+//task for copy files 
+gulp.task('copy', function(){
+  gulp.src(pathsDev.fonts)
+    .pipe(gulp.dest('./build/assets/fonts/'));
+});
+
+
+
 gulp.task('watch',function(){
     gulp.watch(pathsDev.scripts, ['concat-min-js']);
     gulp.watch(pathsDev.html,  ['minifyhtml']);
@@ -66,7 +75,7 @@ gulp.task('watch',function(){
 });
 
 // Taks default gulp! 
-gulp.task('default', ['imagemin', 'concat-min-sass-css', 'concat-min-js', 'minifyhtml', 'watch'], function(){
+gulp.task('default', ['imagemin', 'concat-min-sass-css', 'concat-min-js', 'minifyhtml', 'copy','watch'], function(){
   console.log('gulp running...')
 });
 

@@ -1,7 +1,19 @@
 /*
+	import placeholders
+*/
+	@import "placeholders/gerals.scss";
+/*
+	Import fonts
+*/
+
+	@import "partials/fonts.scss";  
+
+/*
 	Import style gerals
 */
 
-@import "partials/gerals.scss";
+	@import "partials/gerals.scss";
 
-  
+
+
+    
