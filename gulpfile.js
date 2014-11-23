@@ -27,7 +27,7 @@ var pathsBuild = {
 // Task for concat and minfier  and convert sass to css files 
 gulp.task('concat-min-sass-css', function() {
   gulp.src(pathsDev.styles)
-    .pipe(sass())
+    .pipe(sass({errLogToConsole: true}))
     .pipe(concat('main.css'))
     .pipe(minifyCSS(opts))
     .pipe(rename({suffix: '.min'}))

@@ -1,0 +1,19 @@
+/************************************
+	grid class
+*************************************/
+
+.row{
+	clear: both;
+
+	.col-big,
+	.col-min {
+		position: relative; }
+
+	.col-min {
+		width: 200px;
+		height: 180px; }
+
+	.col-big { 
+		width: 400px;
+		height: 360px;}
+}

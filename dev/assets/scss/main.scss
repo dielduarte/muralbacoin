@@ -1,18 +1,26 @@
-/*
-	import placeholders
-*/
-	@import "placeholders/gerals.scss";
-/*
-	Import fonts
-*/
 
+//IMPORT VARIABLES
+
+	//@import "partials/variables.scss";
+
+//IMPORT PLACEHOLDERS
+
+	@import "placeholders/gerals.scss";
+
+//IMPORT FONTS
+  
 	@import "partials/fonts.scss";  
 
-/*
-	Import style gerals
-*/
+//IMPORT GRID
+
+	@import "partials/grid.scss";
+
+//IMPORT STYLES GERALS
 
 	@import "partials/gerals.scss";
+
+//IMPORT MEDIA QUERYS
+	@import "partials/media.scss";   
 
 
 
